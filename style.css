@@ -119,31 +119,9 @@ nav .logo img {
   display: flex;
   height: 43px;
   width: 45vw;
+  flex-grow: 1;
 }
 
-@media screen and (min-width: 1700px){
- .search_box {
-  width: 70vw;
- } 
-}
-
-@media screen and (min-width: 1650px){
- .search_box {
-  width: 60vw;
- } 
-}
-
-@media screen and (min-width: 1600px){
- .search_box {
-  width: 50vw;
- } 
-}
-
-@media screen and (max-width: 1420px) {
-  .search_box {
-    width: 350px;
-  }
-}
 @media screen and (max-width: 1100px) {
   .search_box {
     margin: 10px 0px;
@@ -217,6 +195,8 @@ nav .logo img {
   display: flex;
   gap: 5px;
   align-items: center;
+  background: transparent;
+  color: white;
 }
 
 @media screen and (max-width: 1100px) {
@@ -229,6 +209,73 @@ nav .logo img {
   position: relative;
   top: 3.6px;
 }
+
+#select-language {
+  padding: 14px 20px;
+  height: 370px;
+  width: 265px;
+  background-color: white;
+  position: absolute;
+  top: 8%;
+  right: 15%;
+  border: none;
+}
+#select-language div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+#select-language div input[type="radio"]{
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 10px; /* Adjust the size of the radio button */
+  height: 10px; /* Adjust the size of the radio button */
+  border-radius: 50%; /* Makes it a circle */
+  border: none; /* Border color */
+  outline: 2px solid #555;
+  outline-offset: 4px;
+  cursor: pointer;
+}
+#select-language div input[type="radio"]:checked {
+  background-color: orange;
+}
+#select-language div input[type="radio"]:not(:checked) {
+  background-color: white;
+}
+#select-language div label {
+  font-size: 12px;
+}
+#select-language div label:hover{
+  text-decoration: underline;
+  color: orange;
+  cursor: pointer;
+}
+#select-language hr {
+  margin: 10px 0;
+  width: 87%;
+  margin-left: auto;
+}
+#select-language > a {
+  display: block;
+  width: 87%;
+  margin-left: auto;
+  color: blue;
+  font-size: 12px;
+  text-decoration: none;
+}
+#active-language img {
+  position: relative;
+  right: 5px;
+}
+#active-language p {
+  width: 190px;
+  font-size: 11px;
+  position: relative;
+  right: 10px;
+}
+
 
 .choose_country select {
   height: 20px;

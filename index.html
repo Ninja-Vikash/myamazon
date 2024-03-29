@@ -48,15 +48,55 @@
           </div>
         </div>
 
-        <div class="choose_country border">
+        <!-- ============= LANGUAGE ============= -->
+        <button id="langBtn" class="choose_country border" popovertarget="select-language">
           <div class="flag">
             <img src="main-assets/indian flag.png" alt="country flag" height="25px"/>
           </div>
-          <select name="" id="">
-            <option value="EN">IN</option>
-            <option value="EN">EN</option>
-            <option value="EN">US</option>
-          </select>
+          <i class="fa-solid fa-angle-down"></i>
+        </button>
+
+        <div id="select-language" popover anchor="langBtn">
+          <div>
+            <input type="radio" checked name="language" id="EN">
+            <label for="EN">English - EN</label>
+          </div>
+          <hr>
+          <div>
+            <input type="radio" name="language" id="HN">
+            <label for="HN">हिन्दी - HN</label>
+          </div>
+          <div>
+            <input type="radio" name="language" id="TA">
+            <label for="TA">తెలుగు - TA</label>
+          </div>
+          <div>
+            <input type="radio" name="language" id="TE">
+            <label for="TE">தமிழ் - TE</label>
+          </div>
+          <div>
+            <input type="radio" name="language" id="KN">
+            <label for="KN">ಕನ್ನಡ - KN</label>
+          </div>
+          <div>
+            <input type="radio" name="language" id="ML">
+            <label for="ML">മലയാളം - ML</label>
+          </div>
+          <div>
+            <input type="radio" name="language" id="BN">
+            <label for="BN">বাংলা - BN</label>
+          </div>
+          <div>
+            <input type="radio" name="language" id="MR">
+            <label for="MR">मराठी - MR</label>
+          </div>
+          <a href="">Learn more</a>
+          <hr>
+          <div id="active-language">
+            <img src="main-assets/indian flag.png" alt="" height="22px">
+            <p>You are shopping on Amazon.in</p>
+          </div>
+          <a href="">Change country/region</a>
         </div>
 
         <div class="ac_info ln-height border">
@@ -486,5 +526,7 @@
         </div>
       </footer>
     </div>
+
+    <script src="script.js"></script>
   </body>
 </html>
