@@ -10,6 +10,8 @@ myamazon is a clone of the popular e-commerce platform Amazon. It is built using
 
 ![myamazon Preview](https://github.com/Ninja-Vikash/asset-cloud/blob/main/myAmazon/amazonclone.png)
 
+[Click to preview](https://myamazonui.netlify.app/)
+
 ## Features
 
 - Responsive design
