@@ -22,11 +22,6 @@ html {
   background-color: var(--main-background);
 }
 
-.container {
-  height: 100%;
-  width: 100%;
-}
-
 /* ============= Reusable Classes =========== */
 .first-line {
   font-size: 12px;
